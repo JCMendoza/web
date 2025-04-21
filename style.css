@@ -1,0 +1,103 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0b0f1a;
+  color: #d0d8f0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.header {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #ffffff;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #00bfff;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #9bbbd4;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid #00bfff;
+  color: #00bfff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.buttons a:hover {
+  background-color: #00bfff;
+  color: #0b0f1a;
+}
+
+section {
+  margin-top: 2rem;
+  background-color: #121d2b;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.1);
+}
+
+h2 {
+  color: #00bfff;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00bfff;
+  display: inline-block;
+}
+
+.job h3 {
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+ul {
+  list-style: inside disc;
+  padding-left: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #0f1626;
+  color: #6c84a4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .buttons a {
+    margin: 0.3rem;
+    padding: 0.5rem 1rem;
+  }
+  section {
+    padding: 1.5rem;
+  }
+}
