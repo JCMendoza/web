@@ -148,17 +148,78 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .header h1 {
-    font-size: 2rem;
+  .header {
+    height: auto;
+    padding: 2rem 1rem;
   }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons a {
+    margin: 0.4rem 0;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-top: 1rem;
+  }
+
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  section {
+    padding: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card {
+    padding: 1rem;
+  }
+
   .container {
     padding: 1rem;
   }
-  .buttons a {
-    margin: 0.3rem;
-    padding: 0.5rem 1rem;
+
+  footer {
+    font-size: 0.9rem;
+    padding: 0.8rem;
   }
-  section {
-    padding: 1.5rem;
-  }
+}
+
+
 }
