@@ -147,6 +147,24 @@ footer {
 }
 
 /* Responsive */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Excepción para la sección 'Sobre mí' */
+.about {
+  align-items: stretch;
+  text-align: left;
+}
+.about-content {
+  flex-direction: row;
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .header {
     height: auto;
