@@ -13,16 +13,31 @@ body {
 }
 
 .container {
-  max-width: 900px;
-  margin: auto;
+  width: 100%;
   padding: 2rem;
 }
 
 .header {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-image: url('1743217092672.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* altura completa de la ventana */
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* oscurece para contraste */
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1rem;
   text-align: center;
-  padding: 3rem 2rem;
-  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header h1 {
@@ -52,12 +67,58 @@ body {
   color: #0b0f1a;
 }
 
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  height: 40px;
+}
+
 section {
   margin-top: 2rem;
   background-color: #121d2b;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 191, 255, 0.1);
+}
+
+.about-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00bfff;
+}
+
+.about-text {
+  flex: 1;
+}
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.experience-card {
+  background-color: #1a263b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
+  background-color: #223044;
 }
 
 h2 {
