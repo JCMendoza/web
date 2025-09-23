@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="es" class="no-js theme-blue">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juan Cruz Mendoza | Portfolio</title>
+  <meta name="description" content="Portfolio de Juan Cruz: proyectos, experiencia y contacto." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header fijo (siempre visible) -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <button id="menuBtn" class="icon-btn" aria-label="Abrir menú" aria-haspopup="true" aria-controls="offcanvas" aria-expanded="false" title="Menú">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+        </svg>
+      </button>
+      <a class="brand" href="#inicio" aria-label="Ir a inicio">Juan Cruz Mendoza | Mi Portfolio</a>
+      <button id="themeToggle" class="icon-btn theme-toggle" aria-label="Cambiar tema" title="Cambiar tema">
+        <span class="shape" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú lateral -->
+  <aside id="offcanvas" class="offcanvas left" aria-hidden="true">
+    <div class="offcanvas-header">
+      <span class="offcanvas-title">Menú</span>
+      <button id="closeMenu" class="icon-btn" aria-label="Cerrar menú" title="Cerrar">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M18.3 5.71L12 12.01 5.7 5.7 4.29 7.11l6.3 6.3-6.3 6.3 1.41 1.41 6.3-6.3 6.3 6.3 1.41-1.41-6.3-6.3 6.3-6.3z"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="offcanvas-nav" aria-label="Navegación principal">
+      <a href="#inicio" class="nav-link">Inicio</a>
+      <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+      <a href="#experiencia" class="nav-link">Experiencia</a>
+      <a href="#educacion" class="nav-link">Educación & Certificados</a>
+      <a href="#skills" class="nav-link">Habilidades/Skills</a> <!-- añadido -->
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+  </aside>
+  <div id="overlay" class="overlay" hidden></div>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="section hero fullscreen reveal" aria-label="Sección de inicio">
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <h1 class="hero-title">Juan Cruz Mendoza</h1>
+          <!-- 📌 EDITA AQUÍ: tu rol -->
+          <p class="hero-subtitle">IT Support & Gestión de Equipos | Estudiante de Programación</p>
+          <div class="hero-actions">
+            <!-- 📌 EDITA AQUÍ: LinkedIn y CV -->
+            <a class="btn" href="https://www.linkedin.com/in/mendozajuancruz1997/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-secondary" href="LINK_DRIVE_CV" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="section fullscreen about">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          <!-- 📌 EDITA AQUÍ: tu foto -->
+          <img src="img/Avatar.jpg" alt="Foto de Juan Cruz" />
+        </div>
+        <div class="about-text reveal">
+          <h2>Sobre mí</h2>
+          <!-- 📌 EDITA AQUÍ: tu texto -->
+          <p>Lideré equipos en retail, donde desarrollé organización, comunicación efectiva y orientación a resultados. Hoy trabajo en soporte en un entorno 100% digital: atención por chat/tickets, coordinación con áreas internas (AADD, CRM, Finanzas, Compliance) y análisis de operaciones con Excel y bases internas. Busco sumar en equipos donde pueda mejorar flujos y la experiencia del usuario.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="section fullscreen experience">
+      <div class="container">
+        <h2 class="reveal">Experiencia laboral</h2>
+        <div class="exp-grid">
+          <!-- 📌 EDITA AQUÍ: tus 4 experiencias -->
+          <article class="job reveal">
+            <h3>bplay - Grupo Boldt</h3>
+            <p>Agente de Contact Center (Actualidad)</p>
+            <p class="muted">Resolución de consultas mediante chat, mail y ticketera. Manejo de plataformas como Alira y Totalcoin.</p>
+          </article>
+          <article class="job reveal">
+            <h3>Carrefour - INC S.A.</h3>
+            <p>Supervisor (2019 - 2024)</p>
+            <p class="muted">Gestión de stock, logística, tareas administrativas y liderazgo de equipo.</p>
+          </article>
+          <article class="job reveal">
+            <h3>Puesto 3</h3>
+            <p>Empresa — Fecha</p>
+            <p class="muted">Breve descripción.</p>
+          </article>
+          <article class="job reveal">
+            <h3>Puesto 4</h3>
+            <p>Empresa — Fecha</p>
+            <p class="muted">Breve descripción.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCACIÓN (centrado) + CERTIFICADOS (lista + carrusel 1 imagen) -->
+    <section id="educacion" class="section edu-courses">
+      <div class="container center">
+        <div class="edu-block reveal">
+          <h2>Educación</h2>
+          <!-- 📌 EDITA AQUÍ: universidad y colegio -->
+          <ul class="edu-list center-list">
+            <li><strong>Universidad Nacional de Hurlingham</strong> — Tecnicatura Universitaria en Programación (En curso)</li>
+            <li><strong>Bachiller en Economía y Administración</strong> — Bachiller en Economía y Administración (2015)</li>
+          </ul>
+        </div>
+
+        <div class="courses-block reveal">
+          <h3>Certificados</h3>
+          <!-- 📌 EDITA AQUÍ: listado textual de certificados -->
+          <ul class="cert-list">
+            <li>Liderazgo en el entorno digital — Santander Open Academy</li>
+            <li>Colaboración y Comunicación Estratégica — Santander Open Academy</li>
+            <li>Metodologías ágiles — Coderhouse</li>
+            <li>Consultas sobre Datos Básicos/Agrupados SQL — Desafío Latam</li>
+            <li>Fundamentos de Power BI — Santander Open Academy</li>
+            <li>Curso de Programador Web — Centro de e-Learning UTN FRBA</li>
+          </ul>
+
+          <!-- 📌 EDITA AQUÍ: imágenes de certificados en /img/certX.jpg -->
+          <div class="carousel one" aria-roledescription="Carrusel" aria-label="Certificados en imágenes">
+            <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+            <div class="carousel-viewport" tabindex="0">
+              <div class="carousel-track">
+                <div class="carousel-item"><img src="img/led.jpg" alt="Certificado 3"></div>
+                <div class="carousel-item"><img src="img/cce.jpg" alt="Certificado 2"></div>
+                <div class="carousel-item"><img src="img/metodologia.png" alt="Certificado 1"></div>
+                <div class="carousel-item"><img src="img/sqll.jpeg" alt="Certificado 4"></div>
+                <div class="carousel-item"><img src="img/sqlll.jpeg" alt="Certificado 4"></div>
+                <div class="carousel-item"><img src="img/powerbi.png" alt="Certificado 4"></div>
+                <div class="carousel-item"><img src="img/pwi.jpg" alt="Certificado 4"></div>
+                <div class="carousel-item"><img src="img/geminiia.jpeg" alt="Certificado 4"></div>
+              </div>
+            </div>
+            <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUEVO: SKILLS (íconos) -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="reveal">Habilidades de liderazgo</h2>
+        <p class="muted reveal">Tecnologías y herramientas que uso</p>
+        <ul class="skills-grid">
+          <!-- 📌 EDITA/RÉPLICA ESTOS ITEMS: ruta + nombre -->
+          <li class="skill-card reveal">
+            <img src="img/equipo.png" alt="Linux" width="256" height="256"><span>Gestión de equipos</span>
+          </li>
+          <li class="skill-card reveal">
+            <img src="img/comunicacion.png" alt="Linux" width="256" height="256"><span>Comunicación efectiva</span>
+          </li>
+          <li class="skill-card reveal">
+            <img src="img/resultados.png" alt="Linux" width="256" height="256"><span>Orientación a resultados</span>
+          </li>
+          <li class="skill-card reveal">
+            <img src="img/resolucion.png" alt="Linux" width="256" height="256"><span>Resolución de problemas</span>
+          </li>
+        </ul>
+        <h2 class="reveal">Skills</h2>
+        <p class="muted reveal">Tecnologías y herramientas que uso</p>
+
+        <!--
+          📌 CÓMO CARGAR ÍCONOS
+          - Guardá los íconos en /img/skills/
+          - Formato recomendado: PNG con fondo transparente, 256×256 px (o 512×512 px). Se verán nítidos en retina.
+          - El tamaño visual se controla con la var CSS --skill-size (64–72 px). Ver styles.css.
+        -->
+        <ul class="skills-grid">
+          <!-- 📌 EDITA/RÉPLICA ESTOS ITEMS: ruta + nombre -->
+          <li class="skill-card reveal">
+            <img src="img/excel.png" alt="HTML" width="256" height="256"><span>Excel</span>
+          </li>
+          <li class="skill-card reveal">
+            <img src="img/bi.png" alt="CSS" width="256" height="256"><span>Power BI</span>
+          </li>
+          <li class="skill-card reveal">
+            <img src="img/sql.png" alt="JavaScript" width="256" height="256"><span>SQL</span>
+          </li>
+          <li class="skill-card reveal">
+            <img src="img/html.png" alt="Git" width="256" height="256"><span>Html</span>
+          </li>
+          <li class="skill-card reveal">
+            <img src="img/css.png" alt="VS Code" width="256" height="256"><span>CSS</span>
+          </li>
+          <li class="skill-card reveal">
+            <img src="img/js.png" alt="Linux" width="256" height="256"><span>JavaScript</span>
+          </li>
+          <li class="skill-card reveal">
+            <img src="img/git.png" alt="Linux" width="256" height="256"><span>GitHub</span>
+          </li>
+          <li class="skill-card reveal">
+            <img src="img/openia.png" alt="Linux" width="256" height="256"><span>OpenAI</span>
+          </li>
+          <li class="skill-card reveal">
+            <img src="img/gemi.png" alt="Linux" width="256" height="256"><span>Gemini</span>
+          </li>
+          <li class="skill-card reveal">
+            <img src="img/n8n.png" alt="Linux" width="256" height="256"><span>N8N</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACTO (centrado, con envío a email) -->
+    <section id="contacto" class="section">
+      <div class="container center">
+        <h2 class="reveal">Contacto</h2>
+
+        <!--
+          📌 PARA RECIBIR MAILS:
+          Opción recomendada (sin backend): Formspree.
+            1) Creá una cuenta gratis y un Form.
+            2) Copiá el endpoint (ej.: https://formspree.io/f/abcdwxyz).
+            3) Pegalo en el atributo action del form.
+          Alternativa de emergencia: mailto: (abre el correo del usuario y no siempre funciona).
+        -->
+        <form id="contactForm" class="contact-form reveal"
+              action="https://formspree.io/f/mwprkekp"  <!-- ← 📌 Pega aquí tu endpoint real -->
+              
+          <!-- metadatos opcionales -->
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio" />
+          <input type="hidden" name="_language" value="es" />
+
+          <div class="row">
+            <!-- 📌 EDITA AQUÍ: tu ciudad/provincia y teléfono se piden antes del mensaje -->
+            <label class="field">
+              <span>Tu nombre</span>
+              <input type="text" name="name" placeholder="Tu nombre" autocomplete="name" required>
+            </label>
+
+            <label class="field">
+              <span>Tu email</span>
+              <input type="email" name="email" placeholder="tu@email"
+                     autocomplete="email" required>
+            </label>
+          </div>
+
+          <div class="row">
+            <label class="field">
+              <span>¿Dónde vivís? (Ciudad / Provincia)</span>
+              <input type="text" name="location" placeholder="Ej.: Morón, Buenos Aires" autocomplete="address-level2">
+            </label>
+
+            <label class="field">
+              <span>Teléfono</span>
+              <input type="tel" name="phone" placeholder="+54 11 1234-5678"
+                     inputmode="tel" pattern="[0-9+()\-.\s]{6,}">
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Mensaje</span>
+            <textarea name="message" rows="4" placeholder="Contame en qué te puedo ayudar" required></textarea>
+          </label>
+
+          <!-- Honeypot anti-spam -->
+          <label class="hp" aria-hidden="true">No completar
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+          </label>
+
+          <button class="btn" type="submit">Enviar</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-hint muted">También podés escribirme por email directo: <!-- 📌 EDITA: tu email -->
+            <a href="mailto:mendozajuancruz1997@gmail.com">
+              mendozajuancruz1997@gmail.com
+            </a>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> Juan Cruz
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
