@@ -174,3 +174,20 @@ revealEls.forEach(el => io.observe(el));
     }
   });
 })();
+// ========= Flecha scroll hacia "Sobre mí" =========
+const scrollDown = document.getElementById('scrollDown');
+if (scrollDown) {
+  scrollDown.addEventListener('click', () => {
+    const target = document.getElementById('sobre-mi');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      scrollDown.classList.add('hidden');  // se oculta
+    } else {
+      scrollDown.classList.remove('hidden'); // reaparece si volvés arriba
+    }
+  });
+}
+
