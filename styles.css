@@ -11,7 +11,7 @@ body {
 
 /* Fondo exclusivo para la sección Inicio */
 #inicio { 
-  --hero-bg: url('img/fondoinicio.jpg'); /* ← tu imagen */
+  --hero-bg: url('Img/fondoinicio.jpg'); /* ← tu imagen */
 }
 
 /* ===== Temas ===== */
@@ -219,3 +219,4 @@ p { margin:0 0 12px; color: var(--muted); }
 /* ===== Efecto “disolver” ===== */
 .reveal{ --reveal: 0; opacity: calc(.05 + .95 * var(--reveal)); transform: translateY(calc((1 - var(--reveal)) * 20px)); filter: blur(calc((1 - var(--reveal)) * 6px)); transition: opacity .2s linear, transform .2s ease-out, filter .2s ease-out; }
 .reveal.visible{ opacity:1; transform:none; filter:none; }
+
